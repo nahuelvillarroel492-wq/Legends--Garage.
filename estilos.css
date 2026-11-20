@@ -1,0 +1,214 @@
+:root {
+    --rojo: #d71920;
+    --fondo: #101114;
+    --panel: #1b1d22;
+    --texto: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 42px 18px;
+    text-align: center;
+    background: linear-gradient(135deg, #080808, #292929);
+    border-bottom: 3px solid var(--rojo);
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+header p {
+    margin: 10px 0 0;
+    color: #c8c8c8;
+}
+
+.navbar {
+    background: #080808;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.offcanvas {
+    background: #17181c;
+    color: white;
+}
+
+.offcanvas .nav-link {
+    color: #eee;
+    padding: 12px 4px;
+}
+
+.offcanvas .nav-link:hover {
+    color: var(--rojo);
+}
+
+main {
+    width: min(1120px, 92%);
+    margin: 32px auto 55px;
+}
+
+.seccion {
+    margin-bottom: 34px;
+    padding: 28px;
+    background: var(--panel);
+    border: 1px solid #303238;
+    border-radius: 12px;
+}
+
+.seccion h2 {
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.seccion p {
+    color: #d2d2d2;
+    line-height: 1.7;
+}
+
+#carruselMarcas {
+    padding: 8px 42px 38px;
+}
+
+.logo-card {
+    min-height: 220px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 22px;
+    color: #fff;
+    text-decoration: none;
+    background: #f5f5f5;
+    border-radius: 10px;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.logo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #0008;
+    color: var(--rojo);
+}
+
+.logo-card img {
+    width: 100%;
+    height: 105px;
+    object-fit: contain;
+}
+
+.logo-card h3 {
+    margin: 0;
+    color: #171717;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.logo-card span {
+    color: #555;
+    font-size: .9rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 7%;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+.auto-card {
+    overflow: hidden;
+    background: #111216;
+    border: 1px solid #383a40;
+    border-radius: 12px;
+}
+
+.auto-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: #222;
+}
+
+.auto-card .card-body {
+    padding: 22px;
+}
+
+.auto-card h3 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.auto-card p {
+    color: #d1d1d1;
+    line-height: 1.7;
+}
+
+.fuente-foto {
+    margin-top: 14px;
+    font-size: .85rem;
+    color: #aaa;
+}
+
+.fuente-foto a {
+    color: #ff666b;
+}
+
+.boton {
+    background: var(--rojo);
+    color: white;
+    border: 0;
+}
+
+.boton:hover {
+    background: #a90f15;
+    color: white;
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    background: #070707;
+    color: #aaa;
+    border-top: 2px solid var(--rojo);
+}
+
+footer p {
+    margin: 4px;
+}
+
+@media (max-width: 576px) {
+    .seccion {
+        padding: 20px 16px;
+    }
+
+    #carruselMarcas {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .auto-card img {
+        height: 230px;
+    }
+}
